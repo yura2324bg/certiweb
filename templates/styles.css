@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0044ff4b, #0099ff);
+  min-height: 100vh;
+}
+
+/* Menú lateral */
+.sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-color: #007bff; /* Color del menú lateral */
+  padding: 20px 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.sidebar .nav-link i {
+  margin-right: 10px;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #0057b347; /* Color al pasar el mouse */
+  border-radius: 5px;
+}
+
+
+.main-content {
+  margin-left: 220px; /* Espacio para el menú lateral */
+  padding: 20px;
+}
+
+
+.efecto-boton {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.efecto-boton:hover {
+  transform: translateY(-3px);
+    background-color: #004aad;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    
+    
+  
+}
+.bg-light {
+  background-color: #284a6c19 !important; /* Cambia este color según lo que necesites */
+}
+
+.mi-formulario {
+  background-color: #4A90E2; /* Azul personalizado */
+  color: white; /* Texto en blanco */
+  padding: 20px;
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.mi-tabla {
+  background-color: #135fbb42 !important; /* Aplica el fondo azul */
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Asegurar que la tabla tenga el mismo color de fondo */
+.mi-tabla .table {
+  background-color: #587eaa64 !important;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Aplicar fondo a las celdas */
+.mi-tabla .table th,
+.mi-tabla .table td {
+  background-color: #4a91e251 !important;
+  color: white !important;
+  border-color: white; /* Opcional: mejorar el contraste */
+}
+
+input[type="text"] {
+  background-color: white; /* Fondo blanco */
+  color: black; /* Texto negro */
+  border: 2px solid #007BFF; /* Borde azul */
+  padding: 8px;
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px;
+}
+
+input[type="text"]:focus {
+  background-color: #1577cd78; /* Cambia el color cuando está activo */
+  border-color: #0056b3;
+  outline: none;
+}
+
+
+
+
+.card-header {
+  background-color: #007bff; 
+  color: white;             
+  font-weight: bold;
+}
+
+.card {
+  background-color: #1a39545f; 
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.col-12.col-md-7 {
+  background-color: #1e87b768;
+  border-radius: 8px; 
+  padding: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.135); 
+}
+.caja-tabla {
+  background-color: #ffffff; 
+  border-radius: 8px; 
+  padding: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.079); 
+}
+.tabla-personalizada {
+  background-color: #0c42d609; 
+  border-radius: 8px; 
+  overflow: hidden;
+}
+
+.tabla-personalizada th {
+  background-color: #007bf8; /* Color del encabezado */
+  color: white;
+}
+
+.tabla-personalizada td {
+  background-color: #063f712a 
+
+ 
+}
+
+.container-fluid {
+  max-width: 95%;
+  margin: auto;
+}
+
+
+.tabla-personalizada {
+  width: 100%;
+  min-width: 300px;
+  font-size: 14px;
+}
+
+
+.card {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+
+.btn {
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .col-md-5, .col-md-7 {
+      width: 100% !important;
+  }
+  .btn-group {
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+
+.card-header {
+  background-color: #007aff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #007aff;
+  border: none;
+  transition: background 0.3s;
+}
+.alumnos {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  background-color: #007aff;
+  transition: all 0.3s ease;
+}
+
+.alumnos:hover {
+  background-color: #005ecb;
+  color: white;
+}
+
+.alumnos:active {
+  transform: scale(0.95);
+  background-color: #0047a3;
+}
+.alumnos:hover {
+  background-color: #005ecb; 
+  color: white; 
+  transition: background 0.3s, color 0.3s; 
+}
+
+.table tbody tr:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+.btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+.menu-item {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #005ecb;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.menu-item:active {
+  background-color: #004199;
+}
+.navbar a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  transform: scale(1.05);
+}
+
+.navbar a:active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#compartir {
+  background-color: #007bff;
+}
+
+#compartir:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
